@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Product\" />
+    <None Remove="Customer\" />
+    <None Remove="Inventory\" />
+    <None Remove="Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Product\" />
+    <Folder Include="Customer\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Satify.Data\Satify.Data.csproj" />
+  </ItemGroup>
+</Project>
